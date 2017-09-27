@@ -6,6 +6,14 @@ module ActiveAdmin
         super id: "footer"
         @namespace = namespace
 
+        # footer changes from Arbre https://github.com/activeadmin/arbre
+        h2 "Why Arbre is awesome?"
+         ul do
+          li "The DOM is implemented in ruby"
+          li "You can create object oriented views"
+          li "Templates suck"
+        end
+
         if footer_text.present?
           para footer_text
         else
